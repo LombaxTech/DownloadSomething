@@ -7,7 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Download a Picture!</h1>
-    <a href="lol.jpg" download="downloaded_lol">Eren</a>
+    <h1>Download this Picture!</h1>
+    <img src="./images/ReinerSoldier.jpg" style="width: 50%; display: block">
+    <a href="./images/ReinerSoldier.jpg" download="Reiner">Download</a>
+
+    <h2>Copywriting Book</h2>
+    <a href="./pdfs/Copywriting.pdf" download="Copywriting101">Download PDF</a>
+    
+    <!-- <button type="submit" onclick="download()">Download Book</button> -->
+    <script>
+        function download() {
+            window.open("./pdfs/Copywriting.pdf");
+        }
+    </script>
 </body>
 </html>
